@@ -141,6 +141,8 @@ body{
     font-weight: 500;
     line-height:162.5%;
     letter-spacing: 0.48px;
+    border: none;
+    margin-right: 8px;
     background-color: var(--filter-button);
  }
  .filter-button:hover,
@@ -253,3 +255,26 @@ body{
     padding-top: 24px;
     padding-bottom: 25px;
 }
+.filter-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.portfolio-list{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.portfolio-item{
+    margin-bottom: 30px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    padding-bottom: 200px;
+}
+.portfolio-title
+.portfolio-text{
+    padding-left: 24px;
+    padding-top: 24px;
+}
+
+
