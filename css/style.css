@@ -144,6 +144,7 @@ body{
     border: none;
     margin-right: 8px;
     background-color: var(--filter-button);
+    border-radius: 4px;
  }
  .filter-button:hover,
  .filter-button:focus{
@@ -260,14 +261,16 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 8px;
 }
 .portfolio-list{
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: center;
+   gap: 30px;
 }
 .portfolio-item{
-    margin-bottom: 30px;
+    flex-basis: calc((100% - 60px) / 3);
     border: 1px solid rgba(238, 238, 238, 1);
 }
 .portfolio-title
