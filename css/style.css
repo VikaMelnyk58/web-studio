@@ -272,6 +272,7 @@ body{
 .portfolio-item{
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid rgba(238, 238, 238, 1);
+    max-width: 370px;
 }
 .portfolio-title
 .portfolio-text{
