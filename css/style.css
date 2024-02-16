@@ -228,6 +228,18 @@ body{
 .benefits-item{
     width: 270px;
 }
+.benefits-item::before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-color:var(--filter-button);
+    background-image: url("../img/antenna\ 1.png"), url("../img/clock\ 1.png"), url("../img/diagram\ 1.png"), url("../img/astronaut\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
 .work-list{
     display: flex;
     justify-content: space-between;
