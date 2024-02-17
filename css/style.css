@@ -235,8 +235,8 @@ body{
     display: block;
     background-color:var(--filter-button);
     background-image: url("../img/antenna\ 1.png"), url("../img/clock\ 1.png"), url("../img/diagram\ 1.png"), url("../img/astronaut\ 1.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: center, center, center, center;
     margin-bottom: 30px;
     border-radius: 4px;
 }
