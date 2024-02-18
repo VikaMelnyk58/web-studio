@@ -234,11 +234,28 @@ body{
     height: 120px;
     display: block;
     background-color:var(--filter-button);
-    background-image: url("../img/antenna\ 1.png"), url("../img/clock\ 1.png"), url("../img/diagram\ 1.png"), url("../img/astronaut\ 1.png");
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: center, center, center, center;
     margin-bottom: 30px;
     border-radius: 4px;
+}
+.benefits-item:nth-child(1){
+    background-image: url("../img/antenna\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.benefits-item:nth-child(2){
+    background-image: url("../img/clock\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.benefits-item:nth-child(3){
+    background-image: url("../img/diagram\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.benefits-item:nth-child(4){
+    background-image: url("../img/astronaut\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .work-list{
     display: flex;
