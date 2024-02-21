@@ -237,22 +237,22 @@ body{
     margin-bottom: 30px;
     border-radius: 4px;
 }
-.benefits-item:nth-child(1){
+.benefits-item:nth-child(1):before{
     background-image: url("../img/antenna\ 1.png");
     background-repeat: no-repeat;
     background-position: center;
 }
-.benefits-item:nth-child(2){
+.benefits-item:nth-child(2)::before{
     background-image: url("../img/clock\ 1.png");
     background-repeat: no-repeat;
     background-position: center;
 }
-.benefits-item:nth-child(3){
+.benefits-item:nth-child(3)::before{
     background-image: url("../img/diagram\ 1.png");
     background-repeat: no-repeat;
     background-position: center;
 }
-.benefits-item:nth-child(4){
+.benefits-item:nth-child(4)::before{
     background-image: url("../img/astronaut\ 1.png");
     background-repeat: no-repeat;
     background-position: center;
