@@ -211,6 +211,7 @@ border-radius: 50%;
 }
 .joing{
     color: var(--filter-button);
+    margin-bottom: 20px;
 }
 .footer-list{
     display: flex;
@@ -234,6 +235,12 @@ background-color: var(--footer-icon);
 .footer-social:hover{
     background-color: var(--logo-first);
     fill: var(--main-color-second);
+}
+.footer-wrap{ 
+    display: flex; 
+} 
+.footer-socials{ 
+    margin-left: 70px; 
 }
  /* Портфоліо */
  .filter-button{
