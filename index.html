@@ -50,7 +50,33 @@
             <div class="container">
                 <div class="title-div"><h1 class="post-title">Ефективні рішення для вашого бізнесу</h1></div>
                 <div class="botton-div">
-                    <button class="post-button">Замовити зараз</button>  
+                    <button class="post-button" data-modal-open>Замовити послугу</button>  
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button class="close" data-modal-close><svg class="icon-close"><use href="./symbol-defs.svg#icon-close"></use></svg></button>
+                            <h5 class="text-main">Залиште свої дані, ми вам передзвонимо</h5>
+                            <label class="label">
+                                Ім'я
+                                <input class="input-modal" type="text" >
+                                <svg class="icon-person"><use href="./symbol-defs.svg#icon-person"></use></svg>
+                              </label>
+                              <label class="label">
+                                Телефон
+                                <input class="input-modal" type="text" >
+                                <svg class="icon-phone"><use href="./symbol-defs.svg#icon-phone"></use></svg>
+                              </label>
+                              <label class="label">
+                                Пошта
+                                <input class="input-modal" type="text" >
+                                <svg class="icon-email"><use href="./symbol-defs.svg#icon-email"></use></svg>
+                              </label>
+                              <label class="label">
+                                Коментар
+                                <input class="input-modal" type="text" placeholder="Введіть текст" >
+                              </label>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -236,8 +262,14 @@
                    <svg class="footer-icon"><use href="./symbol-defs.svg#icon-linkedin"></use></svg> 
                 </a></li> 
               </ul> 
-            </div>   
+            </div>  
+            <label class="subscribe">
+                <p class="text-subscribe">Підпишіться на розсилку</p>
+                <input class="input-email" type="email" placeholder="E-mail">
+                <button class="footer-btn">Підписатися <svg class="icon-footer"><use href="./symbol-defs.svg#"></use></svg></button>
+            </label> 
         </div> 
     </footer>
+    <script src="./main.js"></script>
 </body>
 </html>

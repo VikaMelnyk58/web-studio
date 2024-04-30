@@ -11,6 +11,7 @@
     --secondary-text: rgba(117, 117, 117, 1);
     --filter-button: rgba(245, 244, 250, 1);
     --shadow-color: rgba(0, 0, 0, 0.2);
+    --close-color: rgba(255, 255, 255, 0.3);
     --icon-color: rgba(175, 177, 184, 1);
     --footer-color: rgba(47, 48, 58, 1);
     --footer-color-second: rgba(255, 255, 255, 0.6);
@@ -96,6 +97,53 @@ fill: var(--logo-first);
     cursor: pointer;
     border: none;
     border-radius: 4px;
+}
+.modal{
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    padding: 40px;
+    background-color: var(--header-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close{
+    border: 1px solid var(--close-color);
+    border-radius: 50px;
+    background-color: var(--header-color);
+    cursor: pointer;
+}
+.icon-close{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+.icon-close:hover,
+.icon-close:focus{
+    color: var(--logo-first);
+}
+.text-main{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--shadow-color);
+    opacity: 1;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.no-scroll{
+    overflow: hidden;
 }
 .benefits-title{
     font-weight: 700;
@@ -257,6 +305,31 @@ background-color: var(--footer-icon);
 } 
 .footer-socials{ 
     margin-left: 70px; 
+}
+.text-subscribe{
+    color: var(--filter-button);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-left: 93px;
+}
+.input-email{
+    background-color: var(--footer-posision);
+    border: 2px solid var(--close-color);
+    border-radius: 4px;
+    height: 50px;
+    width: 358px;
+    margin-left: 93px;
+}
+.footer-btn{
+    width: 200px;
+    height: 50px;
+    background-color: var(--logo-first);
+    border: none;
+    border-radius: 4px;
+    color: var(--header-color);
+    padding-top: 18px;
+    font-weight: 700;
+    cursor: pointer;
 }
  /* Портфоліо */
  .filter-button{
