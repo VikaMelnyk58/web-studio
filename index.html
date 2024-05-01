@@ -56,27 +56,34 @@
                             <button class="close" data-modal-close><svg class="icon-close"><use href="./symbol-defs.svg#icon-close"></use></svg></button>
                             <h5 class="text-main">Залиште свої дані, ми вам передзвонимо</h5>
                             <label class="label">
-                                Ім'я
-                                <input class="input-modal" type="text" >
-                                <svg class="icon-person"><use href="./symbol-defs.svg#icon-person"></use></svg>
+                                <p class="modal-text">Ім'я</p>
+                                <input class="input-modal" type="text" name="username" required minlength="3" maxlength="10">
+                                <svg class="icon-person svg-icon"><use href="./symbol-defs.svg#icon-person"></use></svg>
                               </label>
                               <label class="label">
-                                Телефон
-                                <input class="input-modal" type="text" >
-                                <svg class="icon-phone"><use href="./symbol-defs.svg#icon-phone"></use></svg>
+                                <p class="modal-text">Телефон</p>
+                                <input class="input-modal" type="number" name="number" required minlength="13">
+                                <svg class="icon-phone svg-icon"><use href="./symbol-defs.svg#icon-phone"></use></svg>
                               </label>
                               <label class="label">
-                                Пошта
-                                <input class="input-modal" type="text" >
-                                <svg class="icon-email"><use href="./symbol-defs.svg#icon-email"></use></svg>
+                                <p class="modal-text">Пошта</p>
+                                <input class="input-modal" type="email" name="email" required minlength="15">
+                                <svg class="icon-email svg-icon"><use href="./symbol-defs.svg#icon-email"></use></svg>
                               </label>
                               <label class="label">
-                                Коментар
-                                <input class="input-modal" type="text" placeholder="Введіть текст" >
+                                <p class="modal-text"> Коментар</p>
+                                <textarea cols="30" rows="10" class="textarea" placeholder="Ведіть текст" ></textarea>
                               </label>
+                              <div class="modal-consent">
+                                <label class="lable">
+                                    <input class="checkbox" type="checkbox">
+                                  </label>
+                              <p class="checkbox-text">Погоджуюся з розсилкою та приймаю</p>
+                              <a class="checkbox-link" href="#"> Умови договору</a>
+                              </div>
+                              <button type="submit" class="modal-btn">Відправити</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
