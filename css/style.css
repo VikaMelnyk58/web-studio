@@ -171,9 +171,24 @@ fill: var(--logo-first);
     position: relative;
 }
 .svg-icon{
-    position: absolute;
+    /* position: absolute; */
     width: 18px;
     height: 18px;
+}
+.icon-person{
+    position: absolute;
+    top: 118px;
+    left: 50px;
+}
+.icon-phone{
+    position: absolute;
+    top: 192px;
+    left: 50px;
+}
+.icon-email{
+    position: absolute;
+    top: 263px;
+    left: 50px;
 }
 .icon-close{
     border-radius: 50px;
