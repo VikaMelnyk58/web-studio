@@ -11,12 +11,14 @@
     --secondary-text: rgba(117, 117, 117, 1);
     --filter-button: rgba(245, 244, 250, 1);
     --shadow-color: rgba(0, 0, 0, 0.2);
+    --elips-color:rgba(0, 0, 0, 0.1);
     --close-color: rgba(255, 255, 255, 0.3);
     --icon-color: rgba(175, 177, 184, 1);
     --footer-color: rgba(47, 48, 58, 1);
     --footer-color-second: rgba(255, 255, 255, 0.6);
     --footer-icon:rgba(255, 255, 255, 0.1);
     --footer-posision:rgba(47, 48, 58, 0.8);
+    --portfolio:rgba(33, 150, 243, 0.9);
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -48,6 +50,20 @@ body{
 .navigation-link:hover,
 .navigation-link:focus{
     color: var(--logo-first);
+}
+.navigation-link{
+    position: relative;
+}
+.navigation-link.current::after{
+    content: "";
+    display: block;
+    background-color: var(--logo-first);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -33px;
 }
 .contakts-link{
     font-weight: 500;
@@ -110,10 +126,16 @@ fill: var(--logo-first);
     transform: translate(-50%, -50%);
 }
 .close{
-    border: 1px solid var(--close-color);
-    border-radius: 50px;
+    border: 1px solid var(--elips-color);
+    display: flex;
+    border-radius: 50%;
     background-color: var(--header-color);
     cursor: pointer;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+  
 }
 .icon-close{
     border-radius: 50px;
@@ -368,6 +390,25 @@ box-shadow: 0px 4px 5px 0px var(--shadow-color);
     color: var(--secondary-text);
     margin-bottom: 20px;
     margin-left: 24px;
+}
+.product-action{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    color: var(--header-color);
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background-color: var(--portfolio);
+    opacity: 0;
+}
+.portfolio-div{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-link:hover .product-action{
+    opacity: 1;
 }
 .benefits{
     padding-top: 94px;
