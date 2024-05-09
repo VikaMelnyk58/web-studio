@@ -70,7 +70,7 @@ body{
     bottom: -33px;
     transition-property: background-color, box-shadow;
     transition-duration: 250ms;
-    transition-timing-function: linear;
+    transition-timing-function: ease;
 }
 .navigation-link:hover.current::after,
 .navigation-link:focus.current::after{
