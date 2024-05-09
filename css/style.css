@@ -47,6 +47,9 @@ body{
     font-weight: 500;
     letter-spacing: 0.28px;
     color: var(--text-header);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link:hover,
 .navigation-link:focus{
@@ -65,6 +68,14 @@ body{
     position: absolute;
     left: 0;
     bottom: -33px;
+    transition-property: background-color, box-shadow;
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+}
+.navigation-link.current::after:hover,
+.navigation-link.current::after:focus{
+background-color: var(--text-number);
+box-shadow: 0px 2px 2px 0px var(--shadow-color);
 }
 .contakts-link{
     font-weight: 500;
@@ -72,10 +83,16 @@ body{
     color: var(--text-number);
     display: flex;
     align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contakts-icon{
     margin: 10px;
     fill: var(--text-number);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contakts-link:hover .contakts-icon{
 fill: var(--logo-first);
@@ -155,6 +172,9 @@ fill: var(--logo-first);
     align-items: center;
     margin-left: 490px;
     margin-right: 8px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close:hover{
    fill: var(--logo-first);
@@ -164,14 +184,14 @@ fill: var(--logo-first);
     pointer-events: none;
 }
 .input-modal{
-    width: 448px;
+    width: 408px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--modal-input);
     position: relative;
+    padding-left: 40px;
 }
 .svg-icon{
-    /* position: absolute; */
     width: 18px;
     height: 18px;
 }
@@ -194,6 +214,9 @@ fill: var(--logo-first);
     border-radius: 50px;
     width: 30px;
     height: 30px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-close:hover,
 .icon-close:focus{
@@ -239,7 +262,6 @@ fill: var(--logo-first);
     color: var(--logo-first);
 }
 .modal-btn{
-    
     width: 200px;
     height: 50px;
     margin-top: 30px;
@@ -252,6 +274,9 @@ fill: var(--logo-first);
     color: var(--header-color);
     text-align: center;
     cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus{
@@ -339,6 +364,9 @@ align-items: center;
 justify-content: center;
 fill: var(--text-number);
 border-radius: 50%;
+transition-property: background-color, fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon{
     width: 20px;
@@ -365,6 +393,9 @@ border-radius: 50%;
     justify-content: center;
     align-items: center;
     fill: var(--icon-color);
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover{
     fill: var(--logo-first);
@@ -407,6 +438,9 @@ justify-content: center;
 fill: var(--filter-button);
 border-radius: 50%;
 background-color: var(--footer-icon);
+transition-property: background-color, fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon{
     width: 20px;
@@ -457,11 +491,19 @@ background-color: var(--footer-icon);
     margin-right: 8px;
     background-color: var(--filter-button);
     border-radius: 4px;
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
  .filter-button:hover,
  .filter-button:focus{
  background-color: var(--logo-first);
  box-shadow: 0px 2px 2px 0px var(--shadow-color);
+}
+.portfolio-item{
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover,
 .portfolio-item:focus{
@@ -496,6 +538,9 @@ box-shadow: 0px 4px 5px 0px var(--shadow-color);
     line-height: 1.6;
     background-color: var(--portfolio);
     opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-div{
     position: relative;
