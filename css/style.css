@@ -542,7 +542,6 @@ box-shadow: 0px 4px 5px 0px var(--shadow-color);
     letter-spacing: 0.03em;
     line-height: 1.6;
     background-color: var(--portfolio);
-    opacity: 0;
     transition-property: opacity, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -553,7 +552,8 @@ box-shadow: 0px 4px 5px 0px var(--shadow-color);
 }
 .portfolio-link:hover .product-action{
     opacity: 1;
-    transform: translateY(-6px);
+    transform: translateY(0%);
+    overflow: hidden;
 }
 .benefits{
 
